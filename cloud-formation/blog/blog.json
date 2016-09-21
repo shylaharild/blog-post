@@ -467,11 +467,11 @@
   "Outputs" : {
     "WebsiteURL" : {
       "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [ "WebServer", "PublicDnsName" ]}, "/index.html" ]]},
-      "Description" : "3S-H Website"
+      "Description" : "Website URL"
     },
     "BlogURL" : {
       "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [ "WebServer", "PublicDnsName" ]}, "/blog" ]]},
-      "Description" : "3S-H Blog Site"
+      "Description" : "Blog URL"
     }
   }
 }
